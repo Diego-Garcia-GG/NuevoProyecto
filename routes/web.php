@@ -11,3 +11,5 @@ Route::get('/', function () {
 
 Route::get('/multiplicacion/{num1}/{num2}', [calculadora::class, 'multiplicacion']);
 
+Route::get('/division/{num1}/{num2}',[calculadora::class,'division']);
+
