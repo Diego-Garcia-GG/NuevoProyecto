@@ -17,6 +17,17 @@ class calculadora extends Controller
 
 
 
+    public function resta($num1, $num2)
+    {
+        $resultado = $num1 - $num2;
+        return view('calculadora.resta', ['num1' => $num1, 'num2' => $num2, 'resultado' => $resultado]);
+    }
+
+    public function suma($num1, $num2)
+    {
+        $resultado = $num1 + $num2;
+        return view('calculadora.suma', ['num1' => $num1, 'num2' => $num2,'resultado' => $resultado]);
+    }
 
 
 
