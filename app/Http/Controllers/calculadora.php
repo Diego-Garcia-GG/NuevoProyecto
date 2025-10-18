@@ -37,5 +37,9 @@ class calculadora extends Controller
         return view('calculadora.multiplicacion', ['num1' => $num1, 'num2' => $num2, 'resultado' => $resultado]);
     }
 
-
+    public function potencia($base, $exponente)
+    {
+        $resultado = pow($base, $exponente);
+        return view('calculadora.potencia', compact('resultado', 'base', 'exponente'));
+    }
 }
