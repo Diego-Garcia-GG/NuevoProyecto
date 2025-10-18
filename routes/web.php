@@ -9,6 +9,8 @@ Route::get('/', function () {
 
 });
 
+
+
 Route::get('/multiplicacion/{num1}/{num2}', [calculadora::class, 'multiplicacion']);
 
 Route::get('/division/{num1}/{num2}',[calculadora::class,'division']);
@@ -17,3 +19,5 @@ Route::get('/suma/{num1}/{num2}', [calculadora::class, 'suma']);
 
 Route::get('/resta/{num1}/{num2}', [calculadora::class, 'resta']);
 
+
+Route::get('/potencia/{base}/{exponente}', [calculadora::class, 'potencia'])->name('calculadora.potencia');
